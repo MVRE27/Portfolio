@@ -5,35 +5,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MVRE Design</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </head>
 
 <body>
-    <nav class="navar">
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">MVRE</a><span>Design</span></div>
+            <div class="logo"><a href="#">MVRE<span>|Design</span></a></div>
             <ul class="menu">
                 <li>
-                    <a href="#">Start</a>
+                    <a href="#home">Start</a>
                 </li>
                 <li>
-                    <a href="#">O mnie</a>
+                    <a href="#about">O mnie</a>
                 </li>
                 <li>
-                    <a href="#">Usługi</a>
+                    <a href="#services">Usługi</a>
                 </li>
                 <li>
-                    <a href="#">Umiejętności</a>
+                    <a href="#skills">Umiejętności</a>
                 </li>
                 <li>
-                    <a href="#">Kontakt</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
+                <li>
+                    <a href="#social">Social Media</a>
+                </li>
+                <li>
+                    <a href="#contact">Kontakt</a>
+                </li>
+
             </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
+
+    <!-- Start -->
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Witaj, jestem</div>
+                <div class="text-2">MVRE</div>
+                <div class="text-3">i jestem <span class="typing"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O mnie -->
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">O mnie</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="/images/aboutme.jpg">
+                </div>
+                <div class="column right">
+                    <div class="text">Jestem MVRE i jestem <span>Designerem</span></div>
+                    <p>Jestem studentem informatyki na pierwszym roku. Na codzień zajmuję się grafiką, nauką i jeszcze raz grafiką. W wolnych chwilach streamuję na Twitch.tv moje zmagania w grach. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usługi -->
+
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Usługi</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Grafika użytkowa</div>
+                        <p>Grafika w szeroko rozumianym znaczeniu np. logo, identyfikacja wizualna marki, layout na stream, korekta zdjęć itd.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Strony internetowe</div>
+                        <p>Stworzę dla Ciebie responsywną stronę internetową przy użyciu języków: HTML, CSS oraz JS.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-film"></i>
+                        <div class="text">Edycja filmów</div>
+                        <p>Potrafię również edytować filmy o dowolnej tematyce oraz długości. Nałożenie na nie efektów nie sprawi mi większego problemu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Umiejętności -->
+
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Umiejętności</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Moje umiejętności i doświadczenie</div>
+                    <p>Jak już napomniałem wyżej - jestem studentem informatyki. Na codzień mam doczynienia z takimi językami jak HTML, CSS czy JavaScript. Ponad to potrafię posługiwać się programami firmy Adobe takimi jak: Photoshop, Illustrator, InDesign,
+                        PremierePro, AfterEffects oraz Audition.</p>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Markdown</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="line md"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+
+    <section class="portfolio" id="portfolio">
+        <div class="max-width">
+            <h2 class="title">Portfolio</h2>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+
+    <section class="social" id="social">
+        <div class="max-width">
+            <h2 class="title">Social Media</h2>
+            <div class="social-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-twitch"></i>
+                        <div class="text">Twitch</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, vero. Officiis recusandae, provident blanditiis repudiandae eligendi delectus consequuntur!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-facebook-square"></i>
+                        <div class="text">Facebook</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, vero. Officiis recusandae, provident blanditiis repudiandae eligendi delectus consequuntur!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-instagram"></i>
+                        <div class="text">Instagram</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, vero. Officiis recusandae, provident blanditiis repudiandae eligendi delectus consequuntur!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Kontakt</h2>
+            <div class="contact-content">
+                <div class="text">Jak się ze mną skontaktować?</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, nisi. Debitis expedita ipsa quo quas repudiandae tempora. Voluptatem, voluptate pariatur aliquid, beatae omnis consequuntur earum doloremque voluptatibus dolor, numquam
+                    culpa. Numquam, nulla ab molestiae laudantium quo repellendus consequatur! Quasi provident laudantium inventore dolorum molestias aliquid culpa sequi tenetur repudiandae, amet doloribus, sapiente repellendus error! Explicabo sit temporibus
+                    doloribus neque dolor ipsum corporis rerum aliquam aspernatur dolore, veniam atque excepturi minus hic fuga ut porro ratione impedit necessitatibus facilis adipisci autem aut. Consequatur consectetur, eius at optio recusandae asperiores
+                    tempore voluptatem itaque nesciunt quae nihil quam laudantium eveniet voluptate excepturi a.</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Mail</div>
+                            <div class="sub-title">MvreDesign@business.com</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fab fa-discord"></i>
+                        <div class="info">
+                            <div class="head">Discord</div>
+                            <div class="sub-title">MVRE#0027</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fab fa-facebook-messenger"></i>
+                        <div class="info">
+                            <div class="head">Messenger</div>
+                            <div class="sub-title">m.me/mvredesign</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+
+    <section class="footer">
+        <span>Stworzone przez <a href="#">MVRE Design</a> | <span class="far fa-copyright"></span> 2020 Wszelkie prawa zastrzeżone.</span>
+    </section>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
