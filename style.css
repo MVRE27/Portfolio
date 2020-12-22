@@ -333,7 +333,7 @@ section .title::after {
 }
 
 .skills .skills-content .left .text {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -509,13 +509,13 @@ section .title::after {
 
 .footer {
     text-align: center;
-    background: LightSeaGreen;
+    background: #111;
     padding: 10px 23px;
     color: #fff;
 }
 
 .footer span a {
-    color: #fff;
+    color: LightSeaGreen;
     text-decoration: none;
 }
 
