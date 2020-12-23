@@ -18,7 +18,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">MVRE<span>|Design</span></a></div>
+            <div class="logo" data-text="Text Glitch"><a href="#">MVRE<span>|Design</span></a></div>
             <ul class="menu">
                 <li>
                     <a href="#home">Start</a>
@@ -73,7 +73,7 @@
                 <div class="column right">
                     <div class="text">Jestem MVRE i jestem <span>Designerem</span></div>
                     <p>Mam na imię Marek i studentem informatyki na pierwszym roku. Na co dzień zajmuję się grafiką, nauką i jeszcze raz grafiką. Zainteresowanie komputerem towarzyszy mi od dzieciństwa, ale pasja tworzenia przy jego pomocy od technikum.
-                        Uczęszczałem do technikum o profilu cyfrowych procesów graficznych, a następnie dostałem się na studia informatyczne o profilu grafiki komputerowej. Moim celem jest robienie grafik, z których nie tylko ja będę zadowolony, ale przede
+                        Uczęszczałem do technikum o profilu cyfrowych procesów graficznych, a następnie dostałem się na studia informatyczne o profilu grafika komputerowa. Moim celem jest robienie grafik, z których nie tylko ja będę zadowolony, ale przede
                         wszystkim moi zleceniodawcy. W wolnych chwilach streamuję moje zmagania w grach na <a href="https://www.twitch.tv/mvre" class="">Twitchu.</a></p>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                     <div class="bars">
                         <div class="info">
                             <span>HTML</span>
-                            <span>90%</span>
+                            <span>100%</span>
                         </div>
                         <div class="line html"></div>
                     </div>
@@ -144,6 +144,13 @@
                         </div>
                         <div class="line js"></div>
                     </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JQuery</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="line jq"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,6 +161,28 @@
     <section class="portfolio" id="portfolio">
         <div class="max-width">
             <h2 class="title">Portfolio</h2>
+            <div class="portfolio-content">
+                <ul>
+                    <li class="list active" data-filter="all">Wszystko</li>
+                    <li class="list" data-filter="logo">Logo</li>
+                    <li class="list" data-filter="graphic">Grafiki</li>
+                    <li class="list" data-filter="website">Strona</li>
+                </ul>
+                <div class="gallery">
+                    <div class="itemBox logo"><img src="/images/1.jpg"></div>
+                    <div class="itemBox graphic"><img src="/images/2.jpg"></div>
+                    <div class="itemBox website"><img src="/images/3.jpg"></div>
+                    <div class="itemBox logo"><img src="/images/4.jpg"></div>
+                    <div class="itemBox graphic"><img src="/images/5.jpg"></div>
+                    <div class="itemBox website"><img src="/images/6.jpg"></div>
+                    <div class="itemBox logo"><img src="/images/7.jpg"></div>
+                    <div class="itemBox graphic"><img src="/images/8.png"></div>
+                    <div class="itemBox website"><img src="/images/9.jpg"></div>
+                    <div class="itemBox logo"><img src="/images/10.jpg"></div>
+                    <div class="itemBox graphic"><img src="/images/11.jpg"></div>
+                    <div class="itemBox website"><img src="/images/12.jpg"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -164,25 +193,31 @@
             <h2 class="title">Social Media</h2>
             <div class="social-content">
                 <div class="card">
-                    <div class="box">
-                        <i class="fab fa-twitch"></i>
-                        <div class="text">Twitch</div>
-                        <p>To tutaj ukazuję swoje mniej profesjonalne odbicie i daję się ponieść emocjom towarzyszącym mi w grach.</p>
-                    </div>
+                    <a target="blank" href="https://www.twitch.tv/mvre/">
+                        <div class="box">
+                            <i class="fab fa-twitch"></i>
+                            <div class="text">Twitch</div>
+                            <p>To tutaj ukazuję swoje mniej profesjonalne odbicie i daję się ponieść emocjom towarzyszącym mi w grach.</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card">
-                    <div class="box">
-                        <i class="fab fa-facebook-square"></i>
-                        <div class="text">Facebook</div>
-                        <p>Moja strona na facebooku, na którą wrzucam projekty, nad którymi pracuję i z których jestem dumny.</p>
-                    </div>
+                    <a target="blank" href="https://www.facebook.com/Mare2137/">
+                        <div class="box">
+                            <i class="fab fa-facebook-square"></i>
+                            <div class="text">Facebook</div>
+                            <p>Moja strona na facebooku, na którą wrzucam projekty, nad którymi pracuję i z których jestem dumny.</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card">
-                    <div class="box">
-                        <i class="fab fa-instagram"></i>
-                        <div class="text">Instagram</div>
-                        <p>Służy mi do tego samego co Facebook, aczkolwiek można tam również znaleźć moje amatorskie fotografie.</p>
-                    </div>
+                    <a target="blank" href="https://www.instagram.com/marethepanda/">
+                        <div class="box">
+                            <i class="fab fa-instagram"></i>
+                            <div class="text">Instagram</div>
+                            <p>Służy mi do tego samego co Facebook, aczkolwiek można tam również znaleźć moje amatorskie fotografie.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -194,11 +229,6 @@
         <div class="max-width">
             <h2 class="title">Kontakt</h2>
             <div class="contact-content">
-                <div class="text">Jak się ze mną skontaktować?</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, nisi. Debitis expedita ipsa quo quas repudiandae tempora. Voluptatem, voluptate pariatur aliquid, beatae omnis consequuntur earum doloremque voluptatibus dolor, numquam
-                    culpa. Numquam, nulla ab molestiae laudantium quo repellendus consequatur! Quasi provident laudantium inventore dolorum molestias aliquid culpa sequi tenetur repudiandae, amet doloribus, sapiente repellendus error! Explicabo sit temporibus
-                    doloribus neque dolor ipsum corporis rerum aliquam aspernatur dolore, veniam atque excepturi minus hic fuga ut porro ratione impedit necessitatibus facilis adipisci autem aut. Consequatur consectetur, eius at optio recusandae asperiores
-                    tempore voluptatem itaque nesciunt quae nihil quam laudantium eveniet voluptate excepturi a.</p>
                 <div class="icons">
                     <div class="row">
                         <i class="fas fa-envelope"></i>

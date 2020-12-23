@@ -42,7 +42,7 @@ html {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: LightSeaGreen;
+    background: #111;
 }
 
 .navbar .max-width {
@@ -60,7 +60,7 @@ html {
 }
 
 .navbar .logo a span {
-    color: LightSeaGreen;
+    color: dodgerblue;
 }
 
 .navbar.sticky .logo a span {
@@ -81,7 +81,7 @@ html {
 }
 
 .navbar .menu li a:hover {
-    color: LightSeaGreen;
+    color: dodgerblue;
 }
 
 .navbar.sticky .menu li a:hover {
@@ -102,7 +102,7 @@ html {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: LightSeaGreen;
+    background: dodgerblue;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -155,7 +155,7 @@ html {
 }
 
 .home .home-content .text-3 span {
-    color: LightSeaGreen;
+    color: dodgerblue;
     font-weight: 500;
 }
 
@@ -211,7 +211,7 @@ section .title::after {
     bottom: -16px;
     left: 50%;
     font-size: 20px;
-    color: LightSeaGreen;
+    color: dodgerblue;
     padding: 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -252,12 +252,17 @@ section .title::after {
 }
 
 .about .about-content .right .text span {
-    color: LightSeaGreen;
+    color: dodgerblue;
 }
 
 .about .about-content .right p {
     text-align: justify;
     font-size: 18px;
+}
+
+.about .about-content .right p a {
+    color: dodgerblue;
+    text-decoration: underline;
 }
 
 
@@ -293,7 +298,7 @@ section .title::after {
 }
 
 .services .serv-content .card:hover {
-    background: LightSeaGreen;
+    background: dodgerblue;
 }
 
 .services .serv-content .card:hover i {
@@ -310,7 +315,7 @@ section .title::after {
 
 .services .serv-content .card i {
     font-size: 50px;
-    color: LightSeaGreen;
+    color: dodgerblue;
 }
 
 .services .serv-content .card .text {
@@ -340,6 +345,7 @@ section .title::after {
 
 .skills .skills-content .left p {
     text-align: justify;
+    font-size: 18px;
 }
 
 .skills .skills-content .right .bars {
@@ -371,11 +377,11 @@ section .title::after {
     height: 100%;
     left: 0;
     top: 0;
-    background: LightSeaGreen;
+    background: dodgerblue;
 }
 
 .skills-content .right .html::before {
-    width: 90%;
+    width: 100%;
 }
 
 .skills-content .right .css::before {
@@ -386,8 +392,8 @@ section .title::after {
     width: 50%;
 }
 
-.skills-content .right .md::before {
-    width: 100%;
+.skills-content .right .jq::before {
+    width: 25%;
 }
 
 
@@ -405,6 +411,56 @@ section .title::after {
 .portfolio .title::after {
     background: #111;
     content: "moje projekty"
+}
+
+.portfolio .portfolio-content ul {
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.portfolio .portfolio-content ul li {
+    list-style: none;
+    background-color: #222;
+    padding: 8px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: dodgerblue 2px solid;
+}
+
+.portfolio .portfolio-content ul li.active {
+    color: #fff;
+    background-color: dodgerblue;
+    transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-content .gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio .portfolio-content .gallery .itemBox {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+}
+
+.portfolio .portfolio-content .gallery .itemBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-content .gallery .itemBox img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    z-index: 2;
 }
 
 
@@ -427,7 +483,7 @@ section .title::after {
 }
 
 .social .social-content .card:hover {
-    background: LightSeaGreen;
+    background: dodgerblue;
 }
 
 .social .social-content .card:hover i {
@@ -444,7 +500,11 @@ section .title::after {
 
 .social .social-content .card i {
     font-size: 50px;
-    color: LightSeaGreen;
+    color: dodgerblue;
+}
+
+.social .social-content .card a {
+    color: #fff;
 }
 
 .social .social-content .card .text {
@@ -497,7 +557,7 @@ section .title::after {
 
 .contact .contact-content .row i {
     font-size: 25px;
-    color: LightSeaGreen;
+    color: dodgerblue;
 }
 
 .contact .contact-content .info .head {
@@ -515,7 +575,7 @@ section .title::after {
 }
 
 .footer span a {
-    color: LightSeaGreen;
+    color: dodgerblue;
     text-decoration: none;
 }
 
