@@ -365,10 +365,11 @@ section .title::after {
 }
 
 .skills .skills-content .right .line {
-    height: 5px;
+    height: 10px;
     width: 100%;
     background: lightgrey;
     position: relative;
+    border-radius: 5px;
 }
 
 .skills .skills-content .right .line::before {
@@ -378,6 +379,7 @@ section .title::after {
     left: 0;
     top: 0;
     background: dodgerblue;
+    border-radius: 5px;
 }
 
 .skills-content .right .html::before {
@@ -664,6 +666,10 @@ section .title::after {
     .skills .skills-content .column {
         width: 100%;
         margin-bottom: 20px;
+    }
+    .social .social-content .card {
+        margin-bottom: 20px;
+        width: 100%;
     }
 }
 
