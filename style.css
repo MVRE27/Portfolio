@@ -130,6 +130,8 @@ html {
     display: flex;
     height: 100vh;
     background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     min-height: 500px;
     font-family: 'Oswald', sans-serif;
@@ -472,6 +474,10 @@ section .title::after {
     content: "znajdź mnie na";
 }
 
+.social .social-content {
+    text-align: center;
+}
+
 .social .social-content .card {
     color: #fff;
     display: inline-block;
@@ -618,6 +624,11 @@ section .title::after {
     .menu-btn i.active:before {
         content: "\f00d";
     }
+    .scroll-up-btn {
+        width: 70px;
+        height: 65px;
+        line-height: 65px;
+    }
     .navbar .menu {
         position: fixed;
         height: 100vh;
@@ -667,9 +678,16 @@ section .title::after {
         width: 100%;
         margin-bottom: 20px;
     }
+    .portfolio .portfolio-content ul {
+        font-size: 28px;
+    }
+    .portfolio .portfolio-content .gallery .itembox {
+        max-width: 50%;
+    }
     .social .social-content .card {
         margin-bottom: 20px;
         width: 100%;
+        margin-left: 0px;
     }
 }
 
@@ -690,6 +708,10 @@ section .title::after {
     .skills .skills-content .column {
         margin-bottom: 20px;
         width: 100%;
+    }
+    .social .social-content a .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
     }
 }
 
