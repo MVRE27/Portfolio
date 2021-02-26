@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600&family=Pacifico&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -10,155 +10,23 @@ html {
     scroll-behavior: smooth;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+
+/* Pasek do scrollowania */
+
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-
-/* Navigation */
-
-.max-width {
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-
-.navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 15px 0;
-    font-family: 'Oswald', sans-serif;
-    transition: all 0.3s ease;
-}
-
-.navbar.sticky {
-    padding: 15px 0;
+::-webkit-scrollbar-track {
     background: #111;
 }
 
-.navbar .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a {
-    color: #fff;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 38px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.navbar .logo a span {
-    color: dodgerblue;
-}
-
-.navbar.sticky .logo a span {
-    color: #fff;
-}
-
-.navbar .menu li {
-    list-style: none;
-    display: inline-block;
-}
-
-.navbar .menu li a {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    margin-left: 28px;
-    transition: color 0.3s ease;
-}
-
-.navbar .menu li a:hover {
-    color: dodgerblue;
-}
-
-.navbar.sticky .menu li a:hover {
-    color: #fff;
-}
-
-
-/* Menu button */
-
-.menu-btn {
-    color: #fff;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-}
-
-.scroll-up-btn {
-    position: fixed;
-    height: 45px;
-    width: 42px;
+::-webkit-scrollbar-thumb {
     background: dodgerblue;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
 }
 
-.scroll-up-btn.show {
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-
-/* Home */
-
-.home {
-    display: flex;
-    height: 100vh;
-    background-image: url("/images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    min-height: 500px;
-    font-family: 'Oswald', sans-serif;
-}
-
-.home .max-width {
-    margin: auto 0 auto 40px;
-}
-
-.home .home-content .text-1 {
-    font-size: 30px;
-}
-
-.home .home-content .text-2 {
-    font-size: 84px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home .home-content .text-3 {
-    font-size: 48px;
-    margin: 5px 0;
-}
-
-.home .home-content .text-3 span {
-    color: dodgerblue;
-    font-weight: 500;
+::-webkit-scrollbar-thumb:hover {
+    background: deepskyblue;
 }
 
 
@@ -166,6 +34,12 @@ html {
 
 section {
     padding: 100px 0;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
 }
 
 .about,
@@ -220,17 +94,149 @@ section .title::after {
 }
 
 
+/* Nawigacja */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    font-family: 'Oswald', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: #111;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 38px;
+}
+
+.navbar .logo a span {
+    color: dodgerblue;
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 28px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: dodgerblue;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: dodgerblue;
+}
+
+
+/* Przycisk menu */
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: dodgerblue;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    filter: brightness(80%);
+}
+
+
+/* Home */
+
+.home {
+    display: flex;
+    height: 100vh;
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 30px;
+}
+
+.home .home-content .text-2 {
+    font-size: 84px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 48px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: dodgerblue;
+    font-weight: 500;
+}
+
+
 /* O mnie */
 
 .about .title::after {
     content: "kim jestem";
-}
-
-.about .about-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .about .about-content .left {
@@ -244,11 +250,11 @@ section .title::after {
 }
 
 .about .about-content .right {
-    width: 45%;
+    width: 50%;
 }
 
 .about .about-content .right .text {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -264,18 +270,21 @@ section .title::after {
 
 .about .about-content .right p a {
     color: dodgerblue;
-    text-decoration: underline;
 }
 
 
 /* Usługi  */
 
-.services {
+.services,
+.portfolio,
+.contact {
     color: #fff;
     background: #111;
 }
 
-.services .title::before {
+.services .title::before,
+.portfolio .title::before,
+.contact .title::before {
     background: #fff;
 }
 
@@ -284,43 +293,46 @@ section .title::after {
     content: "co robię"
 }
 
-.services .serv-content {
-    text-align: center;
-}
-
-.services .serv-content .card {
-    display: inline-block;
-    width: calc(30% - 20px);
+.services .serv-content .card,
+.social .social-content .card {
+    width: calc(33% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
-    margin: 0 25px;
+    transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover {
+.services .serv-content .card:hover,
+.social .social-content .card:hover {
     background: dodgerblue;
 }
 
-.services .serv-content .card:hover i {
-    color: #fff;
-}
-
+.social .social-content .card .box,
 .services .serv-content .card .box {
     transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover .box {
+.services .serv-content .card:hover .box,
+.social .social-content .card:hover .box {
     transform: scale(1.05);
 }
 
-.services .serv-content .card i {
+.services .serv-content .card i,
+.social .social-content .card i {
     font-size: 50px;
     color: dodgerblue;
+    transition: color 0.3s ease;
 }
 
-.services .serv-content .card .text {
+.services .serv-content .card:hover i,
+.social .social-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text,
+.social .social-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -335,8 +347,6 @@ section .title::after {
 
 .skills .skills-content .column {
     width: calc(50% - 30px);
-    display: inline-block;
-    margin: 0 14px;
 }
 
 .skills .skills-content .left .text {
@@ -381,36 +391,22 @@ section .title::after {
     left: 0;
     top: 0;
     background: dodgerblue;
-    border-radius: 5px;
 }
 
 .skills-content .right .html::before {
-    width: 100%;
-}
-
-.skills-content .right .css::before {
     width: 75%;
 }
 
-.skills-content .right .js::before {
+.skills-content .right .css::before {
     width: 50%;
 }
 
-.skills-content .right .jq::before {
+.skills-content .right .js::before {
     width: 25%;
 }
 
 
 /* Portfolio */
-
-.portfolio {
-    color: #fff;
-    background: #111;
-}
-
-.portfolio .title::before {
-    background: #fff;
-}
 
 .portfolio .title::after {
     background: #111;
@@ -479,36 +475,7 @@ section .title::after {
 }
 
 .social .social-content .card {
-    color: #fff;
-    display: inline-block;
-    width: calc(30% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    margin: 0 25px;
-}
-
-.social .social-content .card:hover {
-    background: dodgerblue;
-}
-
-.social .social-content .card:hover i {
-    color: #fff;
-}
-
-.social .social-content .card .box {
-    transition: all 0.3s ease;
-}
-
-.social .social-content .card:hover .box {
-    transform: scale(1.05);
-}
-
-.social .social-content .card i {
-    font-size: 50px;
-    color: dodgerblue;
+    display: inline-flex;
 }
 
 .social .social-content .card a {
@@ -517,32 +484,14 @@ section .title::after {
 
 .social .social-content .card .text {
     color: #fff;
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
 }
 
 
 /* Kontakt */
 
-.contact {
-    color: #fff;
-    background: #111;
-}
-
-.contact .title::before {
-    background: #fff;
-}
-
 .contact .title::after {
     background: #111;
     content: "napisz do mnie"
-}
-
-.contact .contact-content .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
 }
 
 .contact .contact-content p {
@@ -550,13 +499,13 @@ section .title::after {
 }
 
 .contact .contact-content .icons {
-    margin: 10px 0;
+    margin: 0;
 }
 
 .contact .contact-content .row {
-    display: flex;
-    height: 65px;
+    display: inline-flex;
     align-items: center;
+    margin: 0 88px;
 }
 
 .contact .contact-content .row .info {
@@ -564,12 +513,17 @@ section .title::after {
 }
 
 .contact .contact-content .row i {
-    font-size: 25px;
+    font-size: 48px;
     color: dodgerblue;
+}
+
+.contact .contact-content .info {
+    font-size: 18px;
 }
 
 .contact .contact-content .info .head {
     font-weight: 500;
+    font-size: 24px;
 }
 
 
@@ -601,7 +555,7 @@ section .title::after {
 }
 
 @media (max-width: 1104px) {
-    .home .max-width {
+    .about .about-content .left img {
         height: 350px;
         width: 350px;
     }
@@ -614,20 +568,12 @@ section .title::after {
 }
 
 @media (max-width: 947px) {
-    .max-width {
-        padding: 0 50px;
-    }
     .menu-btn {
         display: block;
         z-index: 999;
     }
     .menu-btn i.active:before {
         content: "\f00d";
-    }
-    .scroll-up-btn {
-        width: 70px;
-        height: 65px;
-        line-height: 65px;
     }
     .navbar .menu {
         position: fixed;
@@ -638,6 +584,7 @@ section .title::after {
         background: #111;
         text-align: center;
         padding-top: 80px;
+        transition: all 0.3s ease;
     }
     .navbar .menu.active {
         left: 0;
@@ -656,8 +603,12 @@ section .title::after {
     .home .home-content .text-3 {
         font-size: 35px;
     }
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
     .max-width {
-        max-width: 800px;
+        max-width: 930px;
     }
     .about .about-content .column {
         width: 100%;
@@ -670,24 +621,15 @@ section .title::after {
     .about .about-content .right {
         flex: 100%;
     }
-    .services .serv-content .card {
-        margin-bottom: 20px;
-        width: 100%;
-    }
-    .skills .skills-content .column {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .portfolio .portfolio-content ul {
-        font-size: 28px;
-    }
-    .portfolio .portfolio-content .gallery .itembox {
-        max-width: 50%;
-    }
+    .services .serv-content .card,
     .social .social-content .card {
+        width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column {
         width: 100%;
-        margin-left: 0px;
+        margin-bottom: 35px;
     }
 }
 
@@ -701,25 +643,44 @@ section .title::after {
     .home .home-content .text-3 {
         font-size: 32px;
     }
-    .services .serv-content .card {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
+    .home .home-content a {
+        font-size: 20px;
     }
-    .skills .skills-content .column {
-        margin-bottom: 20px;
+    .services .serv-content .card,
+    .social .social-content .card {
         width: 100%;
-    }
-    .social .social-content a .card {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
     }
 }
 
 @media (max-width: 500px) {
     .home .home-content .text-2 {
-        font-size: 60px;
+        font-size: 50px;
     }
     .home .home-content .text-3 {
-        font-size: 32px;
+        font-size: 27px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 19px;
+    }
+    .portfolio .portfolio-content {
+        margin-left: 20px;
+    }
+    .portfolio .portfolio-content li {
+        font-size: 10px;
+    }
+    .contact .contact-content .icons .row {
+        margin: 10px 50px;
+    }
+    .contact .contact-content .icons .row .info {
+        font-size: 14px;
+    }
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
     }
 }

@@ -47,7 +47,7 @@ $(document).ready(function() {
         }
     })
 
-    /* Portfolio opis */
+    /* Portfolio tagi */
 
     $('.list').click(function() {
         $(this).addClass('active').siblings().removeClass('active');
